@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="SSH Helper">
+  <defs>
+    <linearGradient id="sshHelperBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b7cd3" />
+      <stop offset="1" stop-color="#12325c" />
+    </linearGradient>
+    <linearGradient id="sshHelperShield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd6a8" />
+      <stop offset="1" stop-color="#2e9e5b" />
+    </linearGradient>
+  </defs>
+  <rect x="5" y="5" width="54" height="54" rx="14" fill="url(#sshHelperBg)" />
+  <rect x="15" y="14" width="28" height="8" rx="2.5" fill="#e8f1fb" />
+  <rect x="15" y="26" width="28" height="8" rx="2.5" fill="#bcd6f2" />
+  <circle cx="21" cy="18" r="1.6" fill="#2b7cd3" />
+  <circle cx="21" cy="30" r="1.6" fill="#2b7cd3" />
+  <path d="M47 21l10 4v7c0 7-4.4 11.4-10 13-5.6-1.6-10-6-10-13v-7z" fill="url(#sshHelperShield)" stroke="#0e2a4a" stroke-width="1.5" />
+  <path d="M42.5 31.5l3.2 3.2 6.3-6.4" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

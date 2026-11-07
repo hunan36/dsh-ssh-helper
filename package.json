@@ -1,0 +1,77 @@
+{
+  "name": "@hunan36/dsh-ssh-helper",
+  "version": "0.1.0",
+  "description": "SSH accounts, a deployment-directory catalogue, and approval-gated remote updates, rollbacks and uploads for DeepSeek Harness.",
+  "keywords": [
+    "dsh",
+    "deepseek",
+    "deepseek-harness",
+    "plugin",
+    "dsh-plugin",
+    "ssh",
+    "sftp",
+    "deploy",
+    "deployment",
+    "update",
+    "rollback"
+  ],
+  "license": "MIT",
+  "author": "hunan36",
+  "homepage": "https://github.com/hunan36/dsh-ssh-helper#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hunan36/dsh-ssh-helper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hunan36/dsh-ssh-helper/issues"
+  },
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "host/**/*.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "docs/*.png",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "dependencies": {
+    "ssh2": "^1.17.0"
+  },
+  "scripts": {
+    "check": "node scripts/check-syntax.mjs",
+    "test": "node scripts/check-syntax.mjs && node --test test/*.test.mjs",
+    "smoke": "node scripts/smoke-host.mjs"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,13 @@
+# dsh-ssh-helper bundle patch.
+#
+# Mounts the host half as the loader row `ssh-helper`. The browser half ships
+# through package.json `exports['./client']` and the `dsh.client` declaration;
+# its Settings section is registered on the client side.
+#
+# The row id stays `ssh-helper` (a stable, short loader identifier) while the
+# package is scoped: the browser module id inside client.js must equal the
+# package name, but the loader row id does not.
+- insert:
+    - id: ssh-helper
+      name: '@hunan36/dsh-ssh-helper'
+      config: {}

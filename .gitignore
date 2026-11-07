@@ -1,0 +1,18 @@
+node_modules/
+.npm-cache/
+*.log
+.DS_Store
+.smoke-tmp/
+coverage/
+
+# Internal-only material: never publish the audit scratch directory, the
+# internal design contract, or editor/backup copies of documents.
+.scratch/
+CONTRACT.md
+docs/*.bak
+docs/*.png.bak
+*.bak
+*.orig
+*.rej
+
+# The README screenshots in docs/*.png are shipped artifacts: do not ignore them.

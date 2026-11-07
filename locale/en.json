@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "SSH Helper",
+    "description": "Manage SSH accounts, catalog deployment directories, and run approval-gated remote updates and rollbacks."
+  }
+}
