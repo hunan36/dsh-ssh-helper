@@ -78,8 +78,8 @@ export function shQuote(value) {
  *
  * Rejects non-strings, empty values, relative paths, `..` segments, control
  * characters, over-long values and the blocked system roots listed in
- * CONTRACT.md. Returns a normalized absolute path with redundant separators and
- * trailing slashes removed.
+ * `BLOCKED_EXACT` / `BLOCKED_PREFIXES`. Returns a normalized absolute path with
+ * redundant separators and trailing slashes removed.
  *
  * @param {unknown} raw - candidate remote path.
  * @returns {string} normalized absolute path.
