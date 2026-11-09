@@ -1,6 +1,6 @@
 {
   "name": "@hunan36/dsh-ssh-helper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "SSH accounts, a deployment-directory catalogue, and approval-gated remote updates, rollbacks and uploads for DeepSeek Harness.",
   "keywords": [
     "dsh",
